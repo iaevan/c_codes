@@ -4,10 +4,10 @@
 int strindex(char *s, char t[]);
 
 int main() {
-    char srccd[] = "trhrtj <p>This is a paragraph</p>   hi there";
+    char srccd[] = "trhrtj <This is a paragraph>   hi there";
     int iknp, tknp, df, i, k;
-    char ik[] = "<p>";
-    char tk[] = "</p>";
+    char ik[] = "<";
+    char tk[] = ">";
     iknp = strindex(srccd, ik);
     tknp = ((strindex(srccd, tk)) + 3);
     df = tknp - iknp;
